@@ -1,0 +1,9 @@
+
+This command create both modal and migration
+php artisan make:modal ListItem -m
+
+run migration
+php artisan migrate
+
+make controler
+php artisan make:controller ToDoListController
