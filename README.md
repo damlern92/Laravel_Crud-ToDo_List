@@ -3,10 +3,7 @@
 This is to-do list connected with database through Laravel area.
 With this app you can add, remove and mark complete item with saved data in database.
 
-
-
-
-
+<br><br><br><br>
 
 ## About Laravel
 
