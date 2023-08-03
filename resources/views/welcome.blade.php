@@ -25,7 +25,7 @@
 
     </head>
     <body class="antialiased">
-        <div style="background: brown; color:silver;" class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+        <div style="background: rgb(171, 204, 231); color:rgb(0, 0, 0);" class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             <div>
 
                 @foreach ($listItems as $listItem)
