@@ -38,6 +38,7 @@
                         </form>
                     </div> <!-- End of .flex -->
                 @endforeach
+                
                 {{-- Form: --}}
                 <form method="post" action="{{ route('saveItem') }}" accept=charset="UTF-8">
                     {{ csrf_field() }} <!-- For security purposes -->
@@ -46,6 +47,7 @@
                     <input type="text" name="listItem"><br>
                     <button type="submit">Save List</button>
                 </form>
+
 
             </div>
         </div>

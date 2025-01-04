@@ -7,6 +7,16 @@ use App\models\ListItem;
 
 class TodoListController extends Controller
 {
+
+    public function index(){
+        // Return all values from this modal:
+        // return view('welcome', ['listItems' => ListItem::all()]);
+        
+        // Filter
+        return view('welcome', ['listItems' => ListItem::where('is_complete',0)->get()]);
+
+    }
+
     public function saveItem(Request $request){ // request object is data from form
         // \Log::info(json_encode($request->all())); // everthing pass through method
 
@@ -18,17 +28,10 @@ class TodoListController extends Controller
 
         // return view('welcome', ['listItems' => ListItem::all()]);
 
-        return redirect('/'); // Redirect to default route
-    }
+        return redirect('/'); // Redirect to default route 
 
-    public function index(){
-        // Return all values from this modal:
-        // return view('welcome', ['listItems' => ListItem::all()]);
-        
-        // Filter
-        return view('welcome', ['listItems' => ListItem::where('is_complete',0)->get()]);
-    }
-
+   }
+   
     public function markComplete($id){
         // \Log::info($id);
         // Fetch:
@@ -38,5 +41,8 @@ class TodoListController extends Controller
         $listItem->save();
 
         return redirect('/');
+
+
     }
+
 }
